@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obtain smallest value from array </title>
+</head>
+<body>
+<script>
+    let array = [3, 5, 1, 8, -3, 7, 8];
+    let array2 = [7, 12, 6, 9, 20, 56, 89];
+    let array3 = [];
+    let array4 = [0, -100, 0, 0, 0, 0];
+
+    function minArray(arr) {
+        if (arr.length == 0) {
+            return -1;
+        }
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    let min = minArray(array);
+    document.write("array :  " + array + "<br/>");
+    document.write("min of array :  " + min);
+
+</script>
+</body>
+</html>
